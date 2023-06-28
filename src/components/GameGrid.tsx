@@ -9,7 +9,12 @@ interface Props {
 }
 const GameGrid = ({selectedGenre} : Props) => {
   const {data, error, isLoading } = useGames(selectedGenre);
-  const skeletons = [1,2,3,4,5,6];
+  // const skeletons = [1,2,3,4,5,6, 7, 8, 9, 10, 11, 12, 13, 14];
+
+  const skeletons = new Array<number>(data.length);
+  for (let i = 0; i < data.length; i++) {
+    skeletons[i] = i+1;
+  }
   return (
     <>
       {error && <Text>{error}</Text>}
