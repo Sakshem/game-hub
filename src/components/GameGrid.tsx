@@ -14,7 +14,7 @@ const GameGrid = ({gameQuery} : Props) => {
 
   const skeletons = new Array<number>(data.length);
   for (let i = 0; i < data.length; i++) {
-    skeletons[i] = i+1;
+    skeletons[i] = i + 1;
   }
   return (
     <>
