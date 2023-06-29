@@ -19,7 +19,7 @@ export interface GameQuery {
 function App() {
   // const [selectedGenre, setSelectedGenre] = useState<Genre | null>(null);
   // const [selectedPlatform, setSelectedPlatform] = useState<Platform | null>(null);
-
+  console.log('Hello world');
   const [gameQuery, setGameQuery] = useState<GameQuery>({} as GameQuery);
 
   return (
